@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html><!-- wp:heading -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CircuitVerse Sample Tutorial</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+<h1>7 Segment Decoder</h1>
+        <h2>Overview:&nbsp;</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<div><p>This tutorial shares with you different steps for creating a 7 segment decoder using CircuitVerse. A decoder is a combinational circuit which converts a binary number to the corresponding decimal number. It takes in four bits of input and has seven outputs.</p></div>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Design Procedure</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>For generating the 7 segment display circuit in CircuitVerse, we will follow the below steps:&nbsp;</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} -->
+<ol><li>Use the Combinational Analysis tool available within the CircuitVerse simulator to formulate the truth table. Using this truth table, we will then generate the circuit within the simulator. This circuit will drive output to a seven segment LED display.</li><li>Connect the respective labels of the combinational circuit to the respective outputs of the seven segment LED display to see our circuit in action.</li><li>Analyse the circuit behavior using the truth table data.</li></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Truth Table</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Table 1 below lists different outputs for different combinations of input for a 7 segment decoder.&nbsp;</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table">Table 1: Truth table for a 7 segment display<table><tbody><tr><td><strong>S3</strong></td><td><strong>S2</strong></td><td><strong>S1</strong></td><td><strong>S0</strong></td><td><strong>TL</strong></td><td><strong>T</strong></td><td><strong>TR</strong></td><td><strong>M</strong></td><td><strong>BL</strong></td><td><strong>B</strong></td><td><strong>BR</strong></td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td></tr><tr><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td></tr><tr><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td></tr><tr><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr><tr><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td></tr><tr><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td></tr><tr><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2>CircuitVerse Elements List</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Table 2 lists the different components required for implementing the circuit.</p>
+
+<!-- wp:table -->
+<figure class="wp-block-table">Table 2: List of circuit elements<table><tbody><tr><td><strong>Type</strong></td><td><strong>Name</strong></td><td><strong>Quantity</strong></td></tr><tr><td>Output</td><td>SevenSegDisplay</td><td>1</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2>Formulate the Truth Table&nbsp;</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Follow the below steps to formulate the truth table:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} -->
+<ol><li>Navigate to <a href="https://circuitverse.org/simulator">https://circuitverse.org/simulator</a> to launch the simulator.</li><li>Click on <strong>Sign In</strong> to sign in and save this project against your account (refer Figure 1). <img src="images/image3.png" width="624" height="179"></li></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p style="text-align: center;"><em>Figure 1</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true,"start":3} -->
+<ol start="3"><li>Navigate to <strong>PROPERTIES</strong> and click in the project text field to give a name to this project (refer Figure 2).</li></ol>
+<img src="images/image9.png" width="624" height="349">
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p style="text-align: center;"><em>Figure 2</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true,"start":4} -->
+<ol start="4"><li>Navigate to <strong>Tools </strong>in the top toolbar (refer Figure 3).</li></ol>
+<!-- /wp:list -->
+
+<!-- wp:image -->
+<img src="images/image6.png">
+
+
+<!-- wp:paragraph -->
+<p style="text-align: center;"><em>Figure 3</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true,"start":5} -->
+<ol start="5"><li>Select <strong>Combinational Analysis </strong>from the drop down menu to launch the <strong>BooleanLogicTable</strong> screen (refer Figure 4).<img src="images/image10.png" width="624" height="264"></li></ol>
+
+<p style="text-align: center;"><em>Figure 4</em></p>
+
+<ol start="6"><li>Enter <strong>S3, S2, S1, S0</strong> in the input text fields as shown in Figure 5.</li></ol>
+<!-- /wp:list -->
+
+<!-- wp:image -->
+
+<img src="images/image1.png" alt="">
+
+<!-- wp:paragraph -->
+<p style="text-align: center;"><em>Figure 5</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true,"start":7} -->
+<ol start="7"><li>Enter <strong>TL, T, TR, M, BL, B, BR </strong>in the output text fields as shown in Figure 6. Click <strong>Next</strong>.</li></ol>
+
+<!-- wp:image -->
+<img src="images/Image%20with%20Next.png" alt="">
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p style="text-align: center;"><em>Figure 6</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true,"start":8} -->
+<ol start="8"><li>As shown in Figure 7, a boolean logic table structure is populated for the input and output labels specified in the previous steps.</li></ol>
+<!-- /wp:list -->
+
+<img src="images/image4.png" alt="">
+<p style="text-align: center;"><em>Figure 7</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true,"start":9} -->
+<ol start="9"><li>Click on each output cell to update the truth table for the respective values as specified in Table 1. Figure 8 displays an updated truth table for the seven segment decoder in the CircuitVerse simulator.</li></ol>
+<!-- /wp:list -->
+
+<img src="images/Output%20cells%20trutht%20table.png">
+        
+<!-- wp:paragraph -->
+<p style="text-align: center;"><em>Figure 8</em></p>
+
+<!-- wp:list {"ordered":true,"start":10} -->
+<ol start="10"><li>Click <strong>Generate Circuit </strong>to generate the circuit as shown in Figure 9.</li></ol>
+<!-- /wp:list -->
+
+<!-- wp:image -->
+<img src="images/image2.png" alt="">
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p style="text-align: center;"><em>Figure 9</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Complete the circuit</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Refer Figure 10 to connect the respective input wires for corresponding labels of the combinational circuit to the respective outputs of the seven segment display to complete the circuit.</p>
+
+<img src="images/image7.jpg">
+
+<p style="text-align: center;"><em>Figure 10</em></p>
+<!-- /wp:paragraph -->
+<p>The video below demonstrates a 7 segment decoder combinational circuit which converts a binary number to the corresponding decimal number.</p>
+        
+       <div style="text-align: center"><iframe width="560" height="315" src="https://www.youtube.com/embed/tGTy4P-RxP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<!-- wp:heading -->
+<h2>Analyse the Circuit</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Toggle different input values (S3, S2, S1, S0) and validate the truth table (refer Table 1) to verify the implemented seven segment decoder circuit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A seven segment display component has 8 LED segments inside it and has one end of their pins pulled out of the module as shown in Figure 10. To make an LED of a particular segment glow, relevant segments (labeled as a, b, c, d, e, f, g in Figure 10) must be powered up to represent the numbers from&nbsp; 0 to 9. For instance, for displaying number 1, LEDs b and c must be powered up.&nbsp;</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If the LED fails to display the right decimal number,  troubleshoot your wiring connections (refer to Table 3 and Figure 10).&nbsp;</p>
+
+<!-- wp:table -->
+<figure class="wp-block-table">Table 3: 7 Segment Display Pin Configuration<table><tbody><tr><td><strong>Pin Label</strong></td><td><strong>LED</strong></td></tr><tr><td>M</td><td>g</td></tr><tr><td>TL</td><td>f</td></tr><tr><td>T</td><td>a</td></tr><tr><td>TR</td><td>b</td></tr><tr><td>BR</td><td>c</td></tr><tr><td>B</td><td>d</td></tr><tr><td>BL</td><td>e</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+   </body>
+</html>

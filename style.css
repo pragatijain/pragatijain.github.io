@@ -1,0 +1,166 @@
+
+body, *{
+    color: #333333;
+font-family: 'Roboto', sans-serif;
+}
+            nav {
+                width: 220px;
+                background: #EF4438;
+                position: fixed;
+                height: 100%;
+                color: #FFF2F2;
+            }
+            nav ul{
+                list-style-type: none;
+                position: relative;
+                left: 21px;
+                padding: 20px;
+                font-size: 13.5px;
+            }
+            nav ul li{
+                padding: 12px;
+                overflow-wrap: break-word;
+            }
+            nav ul li a{
+                text-decoration: none;
+            }
+
+            nav ul li a:hover{
+                color: #fef9f8;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 120%;
+
+            }
+            nav ul li a i{
+                padding-right: 15px;
+            }
+            #profilePhoto{
+                padding: 10px;
+            }
+
+            #profilePhoto img{
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                /*margin: auto;*/
+                position: relative;
+                top: 10px;
+                background: #fef9f8;  
+                border: 1px solid #ddd;
+                border-radius: 50%;
+                padding: 10px;
+                width: 130px;
+                height: 130px;    
+            } 
+            main{
+                width: 90vw;
+               height: 88vh;
+               color: #333333;
+            } 
+            main .content {
+                display: flex;
+                justify-content: center;
+                align-items: left;
+                font-size: 14px;
+                padding: 5px;
+                position: relative;
+                max-width: 750px;
+                left: 350px;
+                top: 13vh;
+                text-justify: inter-word;
+            }
+
+
+            main .content ul, ol li{
+                padding-bottom: 5px;
+            }
+
+            main h1{
+                color: #EF4438;
+            } 
+
+            footer{
+                color: #EF4438;
+                padding: 10px;
+                background-color: #FFF2F2;
+                height: 10vh;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                
+                font-size: 12px;
+                
+            }
+            
+            #quickInfo{
+                font-size: 12px;
+                text-align: center;
+                padding-top: 8px;
+                line-height: 1.8;
+            }
+
+            a:hover{
+                color: #4438EF;
+
+            }
+            main .bTrail{
+                /*background-color: #FFF2F2; 
+                color: #EF4438; */
+                padding-left: 30px; 
+                height: 8vh; 
+                width: 100%; 
+                margin-left: 30vh;
+            }
+
+            .imgBoxGrid{
+                width: 200px;
+                height: 100px;
+                border: 1px solid black;
+                margin-right: 8px;
+            }
+
+            .projLogos{
+                width: 60px;
+                height: 60px;
+                margin-right: 8px;
+            }
+
+            .docContainer{
+                height: 180px;
+                padding: 5px;
+                display: inline-flex;
+                margin: 15px;
+            }
+
+            .projTags{
+                position: relative;
+                left: -40px;
+                font-size: 12px;
+                margin-top: 12px ;
+            }
+
+            .projTags ul{
+                display: flex;
+            }
+
+            .projTags ul li{
+                background-color: #EEEEEE;
+                list-style: none;
+                margin: 4px 3px;
+                padding: 5px 8px 5px 10px;
+                border: 1px solid #EEEEEE;
+                border-radius: 1px;
+                
+            }
+
+        table{
+            border-spacing: 0px 5px;
+            font-size: 14px;
+        }
+        .withinDocImage{
+            padding: 13px; 
+            border: 1px solid #333333; 
+            margin-left: 25px
+        }
