@@ -93,6 +93,11 @@ font-family: 'Roboto', sans-serif;
                 font-size: 12px;
                 
             }
+
+            .textBold{
+                font-weight: bolder;
+                font-size:medium;
+            }
             
             #quickInfo{
                 font-size: 12px;
